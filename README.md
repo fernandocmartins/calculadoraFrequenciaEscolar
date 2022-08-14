@@ -3,6 +3,7 @@ Calculadora que verifica a frequência escolar baseada no número de aulas totai
 
 ## Como usar
 Basta inserir o número total de aulas do período e depois o número total de presenças que o aluno teve e depois clicar em calcular.
+Há também validações nos campos para inserção vazia e inconsitências de cálculos, por exemplo divisão por zero e campos vazios.
 
 ![Screenshot_1660492324](https://user-images.githubusercontent.com/40214510/184545461-4a5f027c-0f1a-484f-bf8f-42d795178680.png)
 
