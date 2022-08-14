@@ -1,8 +1,12 @@
 package br.com.fernando.calculadorafrequencia
 
+import android.app.Activity
+import android.content.Context
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import br.com.fernando.calculadorafrequencia.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
@@ -25,6 +29,8 @@ class MainActivity : AppCompatActivity() {
     //inicia o listener e chama a funcao onClick para chamar outra funcao da frequencia
     fun calcularFrequencia(){
         binding.btnCalcular.setOnClickListener {
+            //chamada para fechar o teclado após o clique
+            it.hideKeyboard()
             initCalcFrequencia()
         }
     }
@@ -83,5 +89,11 @@ class MainActivity : AppCompatActivity() {
             validacao = false
         }
         return validacao
+    }
+
+    //funcao para esconder o teclado após clique
+    fun View.hideKeyboard() {
+        val inputManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        inputManager.hideSoftInputFromWindow(windowToken, 0)
     }
 }
