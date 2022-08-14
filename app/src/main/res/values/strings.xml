@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Calculadora Frequencia</string>
+    <string name="app_name">Calculadora Frequência</string>
+    <string name="digite_a_qtde_de_aulas">Total de aulas</string>
+    <string name="calculadora_de_frequ_ncia_escolar">Calculadora de Frequência Escolar</string>
+    <string name="digite_a_qtde_de_presencas">Número de presenças</string>
+    <string name="calcular">Calcular</string>
+    <string name="warning_zero">Impossível divisão por zero!</string>
+    <string name="percent">%</string>
+    <string name="mais_que_total">Impossível comparecer a mais aulas do que o total!!</string>
+    <string name="campos_vazios">Há um ou mais campos vazios!</string>
 </resources>
