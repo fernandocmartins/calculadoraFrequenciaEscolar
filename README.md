@@ -1,4 +1,4 @@
-# Calculadora de Frequência Escolas
+# Calculadora de Frequência Escolar
 Calculadora que verifica a frequência escolar baseada no número de aulas totais e presenças do aluno.
 
 ## Como usar
